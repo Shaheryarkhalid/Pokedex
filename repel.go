@@ -51,10 +51,15 @@ type cliCommands struct {
 
 func cleanInput(input string) (cleanedInput []string) {
 	cleanedInput = strings.Split(strings.ToLower(strings.Trim(input, " ")), " ")
-	for idx, word := range cleanedInput {
-		cleanedInput[idx] = strings.Trim(word, " ")
+	newWordsList := []string{}
+	for _, word := range cleanedInput {
+		word = strings.Trim(word, " ")
+		if word == "" || word == " " {
+			continue
+		}
+		newWordsList = append(newWordsList, word)
 	}
-	return cleanedInput
+	return newWordsList
 }
 func getCommands() map[string]cliCommands {
 	return map[string]cliCommands{
