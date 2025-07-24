@@ -1,7 +1,7 @@
 # 🧢 Pokédex CLI
 
-A terminal-based Pokédex game written in Go!  
-Explore the Pokémon world, catch and inspect Pokémon, and build your own Pokédex — all through an interactive command-line interface.
+A terminal-based Pokémon game written in Go!  
+Explore the Pokémon world, catch and inspect Pokémon, and build your own Pokédex collection — all through an interactive command-line interface.
 
 ---
 
